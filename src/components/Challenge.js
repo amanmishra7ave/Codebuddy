@@ -18,13 +18,11 @@ function Challenge() {
   const [filter, setFilter] = useState('all');
 
   useEffect(() => {
-    // Replace with API call in a real app
     setChallenges(dummyChallenges);
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Implement challenge logic
     console.log('Challenge created:', { challenger, challenged, problemCount });
   };
 
