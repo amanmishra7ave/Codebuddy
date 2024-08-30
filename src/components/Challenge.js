@@ -2,13 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import './Challenge.css';
 
-// Dummy data for challenges; replace with API call in a real app
 const dummyChallenges = [
   { id: 1, type: 'individual', challenger: 'user1', challenged: 'user2', problemCount: 5 },
   { id: 2, type: 'group', challenger: 'user3', challenged: 'group1', problemCount: 10 },
   { id: 3, type: 'individual', challenger: 'user4', challenged: 'user5', problemCount: 3 },
-  // Add more dummy data as needed
-];
+];    
 
 function Challenge() {
   const [challenger, setChallenger] = useState('');
